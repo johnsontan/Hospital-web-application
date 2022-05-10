@@ -1,0 +1,108 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+.payment
+{
+    border:1px solid #f2f2f2;
+    height:280px;
+    border-radius:20px;
+    background:#fff;
+}
+.payment_header
+{
+   background:rgba(255,102,0,1);
+   padding:20px;
+   border-radius:20px 20px 0px 0px;
+   
+}
+
+.check
+{
+   margin:0px auto;
+   width:50px;
+   height:50px;
+   border-radius:100%;
+   background:#fff;
+   text-align:center;
+}
+
+.check i
+{
+   vertical-align:middle;
+   line-height:50px;
+   font-size:30px;
+}
+
+.pcontent 
+{
+    text-align:center;
+}
+
+.pcontent  h1
+{
+    font-size:25px;
+    padding-top:25px;
+}
+
+.pcontent a
+{
+    width:200px;
+    height:35px;
+    color:#fff;
+    border-radius:30px;
+    padding:5px 10px;
+    background:rgba(255,102,0,1);
+    transition:all ease-in-out 0.3s;
+}
+
+.content a:hover
+{
+    text-decoration:none;
+    background:#000;
+}
+
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center
+}
+
+.rating>input {
+    display: none
+}
+
+.rating>label {
+    position: relative;
+    width: 1em;
+    font-size: 30px;
+    font-weight: 300;
+    color: #FFD600;
+    cursor: pointer
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+    opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4
+}
